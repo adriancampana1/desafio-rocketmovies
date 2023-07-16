@@ -16,6 +16,19 @@ export const Container = styled.header`
     align-items: center;
 
     padding: 0 123px;
+
+    span {
+        text-align: center;
+        font-size: 14px;
+        color: ${({ theme }) => theme.COLORS.GRAY_100};
+        cursor: pointer;
+
+        margin-left: 15px;
+    }
+
+    span:hover {
+        color: ${({ theme }) => theme.COLORS.PINK};
+    }
 `;
 
 export const Profile = styled(Link)`
@@ -37,15 +50,10 @@ export const Profile = styled(Link)`
         flex-direction: column;
         line-height: 24px;
 
-        span {
-            text-align: start;
-            font-size: 14px;
-            color: ${({ theme }) => theme.COLORS.GRAY_100};
-        }
-
         strong {
             font-size: 18px;
             color: ${({ theme }) => theme.COLORS.WHITE};
+            text-align: end;
         }
     }
 `;
